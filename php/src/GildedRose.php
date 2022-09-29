@@ -6,10 +6,15 @@ namespace GildedRose;
 
 final class GildedRose
 {
+    private array $items;
+
     /**
-     * @var Item[]
+     * @return Item[]
      */
-    private $items;
+    public function getItems(): array
+    {
+        return $this->items;
+    }
 
     public function __construct(array $items)
     {
@@ -66,4 +71,5 @@ final class GildedRose
             }
         }
     }
+
 }
